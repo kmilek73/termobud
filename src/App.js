@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { Button } from 'react-bootstrap';
+import { Fade } from "react-awesome-reveal";
+import Nav from './page/Nav';
+import Arrow from './page/Arrow';
+import Cards from './page/Cards';
+import Contact from './page/Contact';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Nav/>
+    <Arrow />
+    <Cards />
+    <Fade direction='left'>  <Contact /> </Fade>
+   
+             
+      
+          <Fade direction='left'>  Learn React</Fade>
+  
+        <Button>Tesstlkj;lkj;lkj;lkj</Button>
+     
     </div>
   );
 }

@@ -1,0 +1,183 @@
+#arrowL {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    display: flex;
+    color: #333;
+    background-color:$secondary-color;
+    
+}
+
+#arrowL:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background: $primary-color;
+    clip-path: polygon(0 0, 0 40%, 100% 0)
+}
+
+.content {
+
+    border: 0px solid red;
+    display: flex;
+    font-size: 0.9em;
+    background-color: $secondary-color;
+
+
+}
+header{
+position: sticky;
+}
+
+
+#arrowL:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background: #888;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%)
+}
+
+.form-content {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    animation:h2right;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-delay: 1;
+
+}
+
+@keyframes h2right{
+    0% {right: -600px;opacity: 10%;}
+    75% {right:50px; opacity: 60%;}
+    100% {right:0px; opacity: 100%;}
+}
+
+.form-img {
+    display: flex;
+    border: 0px solid red;
+    order: 0;
+    justify-content: center;
+    text-align: left;
+    width: 55%;
+    margin-left: 70px;
+    animation:h2Left;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+@keyframes h2Left{
+    0% {left: -600px;opacity: 10%;}
+    75% {left:50px; opacity: 100%;}
+    100% {left:0px; opacity: 100%;}
+}
+
+.agreement {
+    width: 25px;
+    padding-right: 25px;
+
+}
+
+label {
+    text-align: center;
+
+}
+
+input,
+select,
+textarea {
+    width: 250px;
+    margin-bottom: 10px;
+    background-color: #ccc;
+    border: 2px solid black;
+    color: black;
+}
+
+textarea {
+    height: 80px;
+}
+
+
+form {
+    width: 100%;
+    padding: 40px 20px;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: white;
+}
+
+
+.content h2 {
+    padding: 50px;
+    color: white;
+    font-size: 2.5em;
+    margin-top: 100px;
+    animation:h2Left;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+
+.heading {
+    display: block
+}
+
+
+
+
+@media (max-width: 652px) {
+
+    .content-img {
+
+        padding-top: 30px
+    }
+    img{width:90%;}
+
+    #arrowL {
+
+        min-height: 756px;
+    }
+
+    .content {
+        display: inline-block;
+
+    }
+
+    .content h2 {
+        margin-top: 41px;
+        font-size: 1.5em;;
+    }
+
+    .form-content {
+
+        margin-left: 0px;
+    }
+
+    form {
+        width: 85%;
+      
+    }
+
+    .form-img {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
