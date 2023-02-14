@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/termobud/static/css/main.9db614df.css",
+    "main.js": "/termobud/static/js/main.a1c75b94.js",
+    "static/js/787.738a9e2f.chunk.js": "/termobud/static/js/787.738a9e2f.chunk.js",
+    "static/media/piec.jpg": "/termobud/static/media/piec.723e53d94a0ada0ec540.jpg",
+    "index.html": "/termobud/index.html",
+    "main.9db614df.css.map": "/termobud/static/css/main.9db614df.css.map",
+    "main.a1c75b94.js.map": "/termobud/static/js/main.a1c75b94.js.map",
+    "787.738a9e2f.chunk.js.map": "/termobud/static/js/787.738a9e2f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9db614df.css",
+    "static/js/main.a1c75b94.js"
+  ]
+}
